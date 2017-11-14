@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Santi Segui, Lecturer at the Department of Maths and Computer Science of the Universitat de Barcelona (UB). Member of the BCN Perceptual Computing Lab and associate researcher in Computer Vision Center. Interested in computer vision and machine learning. Professor at computer science degree, main course projecte integrat de software (PIS)">
+                    <meta name="keywords" content="databeersbcn,databeers,datascience,datascienceub,universtiy,universitat,barcelona,santi segui,segu&iacute;,vitria, sven, dickinson, segui,computer, vision, machine learning, Projecte Integrat de Software,PIS,intestinal, endoscopy,uoft,UB,informatica, de la Torre,given imaging,matem&agrave;tica aplicada i an&agrave;lisis">
+                        <meta name="author" content="santi segui">
+                            <link rel="shortcut icon" href="assets/ico/favicon.png">
+                                
+                                <title>Santi Segu&iacute;</title>
+                                
+                                <!-- Bootstrap core CSS -->
+                                <link href="assets/css/bootstrap.css" rel="stylesheet">
+                                    
+                                    <!-- Custom styles for this template -->
+                                    <link href="assets/css/main.css" rel="stylesheet">
+                                        
+                                        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+                                            
+                                            <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+                                                <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+                                                
+                                                <script src="assets/js/jquery.min.js"></script>
+                                                <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+                                                <script src="assets/js/Chart.js"></script>
+                                                
+                                                
+                                                <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                                <!--[if lt IE 9]>
+                                                <script src="assets/js/html5shiv.js"></script>
+                                                <script src="assets/js/respond.min.js"></script>
+                                                <![endif]-->
+                                                
+						<script>
+						  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+						  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+						  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+						  ga('create', 'UA-16428035-6', 'auto');
+						  ga('send', 'pageview');
+
+ 						var _gaq = _gaq || [];
+                                                _gaq.push(['_setAccount', 'UA-16428035-6']);
+                                                _gaq.push(['_trackPageview'])
+
+						</script>
+						<!--<script>
+                                                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                                                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                                                
+                                                ga('create', 'UA-16428035-5', 'auto');
+                                                ga('send', 'pageview');
+                                                
+                                                var _gaq = _gaq || [];
+                                                _gaq.push(['_setAccount', 'UA-16428035-5']);
+                                                _gaq.push(['_trackPageview'])
+                                                
+                                                </script>-->
+                                                </head>
+                                                
+                                                <body data-spy="scroll" data-offset="0" data-target="#nav">
+                                                
+                                                <div id="section-topbar">
+                                                <div id="topbar-inner">
+                                                <div class="container">
+                                                <div class="row">
+                                                <div class="dropdown">
+                                                <ul id="nav" class="nav">
+                                                <li class="menu-item"><a class="smoothScroll" href="#about" title="About">About&nbsp;&nbsp;&nbsp;<i class="icon-user"></i></a></li>
+                                                <li class="menu-item"><a class="smoothScroll" href="#resume" title="Education">Education&nbsp;&nbsp;&nbsp;<i class="icon-file"></i></a></li>
+                                                <li class="menu-item"><a class="smoothScroll" href="#work" title="Works">Work&nbsp;&nbsp;&nbsp;<i class="icon-briefcase"></i></a></li>
+                                                <li class="menu-item"><a class="smoothScroll" href="#publications" title="Publications">Publications&nbsp;&nbsp;&nbsp;<i class="icon-book"></i></a></li>
+                                                <li class="menu-item"><a class="smoothScroll" href="#teaching" title="Teaching">Teaching&nbsp;&nbsp;&nbsp;<i class="icon-pencil"></i></a></li>
+                                                <li class="menu-item"><a class="smoothScroll" href="#organizing" title="Organizing">Organization&nbsp;&nbsp;&nbsp;<i class="icon-calendar"></i></a></li>
+                                                
+                                                <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact">Contact&nbsp;&nbsp;&nbsp;<i class="icon-envelope"></i></a></li>
+                                                </ul><!--/ uL#nav -->
+                                                </div><!-- /.dropdown -->
+                                                
+                                                <div class="clear"></div>
+                                                </div><!--/.row -->
+                                                </div><!--/.container -->
+                                                
+                                                <div class="clear"></div>
+                                                </div><!--/ #topbar-inner -->
+                                                </div><!--/ #section-topbar -->
+                                                
+                                                <div id="headerwrap">
+                                                <div class="container">
+                                                <div class="row centered">
+                                                <div class="col-lg-12">
+                                                <h1>Santi Segu&iacute;</h1>
+                                                <h3>Lecturer&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; Computer Vision&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;Machine Learning&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; santi.segui@ub.edu</h3>
+                                                </div><!--/.col-lg-12 -->
+                                                </div><!--/.row -->
+                                                </div><!--/.container -->
+                                                </div><!--/.#headerwrap -->
+                                                
+                                                
+                                                <section id="about" name="about"></section>
+                                                <div id="intro">
+                                                <div class="container">
+                                                <div class="row">
+                                                
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>ABOUT</h5>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                <p> I am a Lecturer at the Department of Apply Maths and Analysis of the <a href="https://www.ub.edu" onClick="ga('send', 'event', 'Link', 'Click', 'UB');">University of Barcelona</a>. Member of the <a href="https://bcnpcl.wordpress.com/" onClick="ga('send', 'event', 'Link', 'Click', 'BCNPCL');">BCN Perceptual Computing Lab</a> and associate researcher in <a href="http://www.cvc.uab.es/" onClick="ga('send', 'event', 'Link', 'Click', 'CVC');">Computer Vision Center</a> of Barcelona.</p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                <!--<p><a href="#"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>-->
+                                                </div>
+                                                
+                                                </div><!--/.row -->
+                                                </div><!--/.container -->
+                                                </div><!--/ #intro -->
+                                                
+                                                
+                                                <section id="resume" name="resume"></section>
+                                                <!--EDUCATION DESCRIPTION -->
+                                                <div class="container desc">
+                                                <div class="row">
+                                                
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>EDUCATION</h5>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                <p><t>Ph.D. in Computer Sciences</t><br/>
+                                                <a href="https://www.ub.edu" onClick="ga('send', 'event', 'Link', 'Click', 'UB');">Universitat de Barcelona</a>, Barcelona, Spain <br/>
+                                                Advisor: <a href="http://www.ub.edu/cvub/jordivitria/" onClick="ga('send', 'event', 'Link', 'Click', 'JordiVitria');">Dr. Jordi Vitri&agrave;.</a><br/>
+                                                Title: Contributions to the Diagnosis of Intestinal Motility by Automatic Image Analysis</br>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                <p><sm>July 2011</sm></p>
+                                                </div>
+                                                
+                                                <div class="col-lg-6 col-lg-offset-3">
+                                                <p><t>Master in Computer Science</t><br/>
+                                                Universitat Autònoma de Barcelona, Bellaterra, Spain <br/>
+                                                Advisor: <a href="http://www.ub.edu/cvub/jordivitria/" onClick="ga('send', 'event', 'Link', 'Click', 'JordiVitria');">Dr. Jordi Vitri&agrave;.</a><br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                <p><sm>July 2007</sm></p>
+                                                </div>
+                                                
+                                                </div><!--/.row -->
+                                                <br>
+                                                <hr>
+                                                </div><!--/.container -->
+                                                
+                                                
+                                                <section id="work" name="work"></section>
+                                                <!--WORK DESCRIPTION -->
+                                                <div class="container desc">
+                                                <div class="row">
+                                                
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>WORK</h5>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                <p><t>Lecturer</t><br/>
+                                                <a href="https://www.ub.edu" onClick="ga('send', 'event', 'Link', 'Click', 'UB');">Universitat de Barcelona</a>, Barcelona, Spain <br/>
+                                                </p>
+                                                <p><more></more></p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                <p><sm>December 2012 - CURRENT</sm></p>
+                                                </div>
+                                                
+                                                <div class="col-lg-6 col-lg-offset-3">
+                                                <p><t>Visiting Scientist</t><br/>
+                                                University of Toronto (UofT), Toronto, CAN <br/>
+                                                Advisor: <a href="http://www.cs.toronto.edu/~sven/" onClick="ga('send', 'event', 'Link', 'Click', 'SVEN');">Sven Dickinson.</a></br>
+                                                </p>
+                                                <p><more></more></p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                <p><sm>September 2014 - December 2014</sm></p>
+                                                </div>
+                                                
+                                                <div class="col-lg-6 col-lg-offset-3">
+                                                <p><t>Visiting Scientist</t><br/>
+                                                Carnegie Mellon University (CMU), Pittsburgh, USA <br/>
+                                                Advisor: <a href="http://www.cs.cmu.edu/~ftorre/" onClick="ga('send', 'event', 'Link', 'Click', 'DeLaTorre');">Fernando de la Torre.</a></br>
+                                                </p>
+                                                <p><more></more></p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                <p><sm>January 2012 - Febraury 2012</sm></p>
+                                                </div>
+                                                <div class="col-lg-6 col-lg-offset-3">
+                                                <p><t>Postdoctoral Researcher</t><br/>
+                                                <a href="http://www.cvc.uab.es/" onClick="ga('send', 'event', 'Link', 'Click', 'CVC');">Computer Vision Center</a>, Bellaterra, ESP <br/>
+                                                </p>
+                                                <p><more></more></p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                <p><sm>July 2011 - December 2012</sm></p>
+                                                </div>
+                                                <div class="col-lg-6 col-lg-offset-3">
+                                                <p><t>Assistant Professor</t><br/>
+                                                <a href="https://www.ub.edu" onClick="ga('send', 'event', 'Link', 'Click', 'UB');">Universitat de Barcelona</a>, Barcelona, ESP <br/>
+                                                </p>
+                                                <p><more></more></p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                <p><sm>September 2008 - December 2012</sm></p>
+                                                </div>
+                                                
+                                                
+                                                </div><!--/.row -->
+                                                <br>
+                                                <hr>
+                                                </div><!--/.container -->
+                                                
+                                                
+                                                <section id="students" name="students"></section>
+                                                <!--Publications DESCRIPTION -->
+                                                      <div class="container desc">
+                                                            <div class="row">
+                                                                  <div class="col-lg-2 col-lg-offset-1">
+                                                                        <h5>STUDENTS</h5>
+                                                                  </div>
+                                                                  <div class="col-lg-9">
+                                                                        <p><t>Guillem Pascual</t>, Universitat de Barcelona</a>, Barcelona <br/></p>
+                                                                        <p><more></more></p>
+                                                                        <p><t>Hadi Keivan</t>, Universitat de Barcelona</a>, Barcelona <br/></p>
+                                                                        <p><more></more></p>
+                                                                
+                                                                  
+                                                                        <p><b>Open PhD Positions:</b> I'm always interested to receive PhD student applications, so feel free to email me with any questions.</p>
+
+                                                                  </div>
+                                                            </div>
+                                                            <hr>
+                                                      </div>
+
+                                                <br>
+                                                
+
+                                             <section id="book" name="book"></section>
+                                                <!--ORGANIZATION DESCRIPTION -->
+                                                <div class="container desc">
+                                                <div class="row">
+                                                
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>BOOK</h5>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                <p>
+                                                We have written a book entitled <t><a target="_blank" href="https://www.amazon.com/Introduction-Data-Science-Applications-Undergraduate/dp/3319500163" onClick="ga('send', 'event', 'Link', 'Click', 'DSBook');">"Introduction to Data Science. A Python Approach to Concepts, Techniques and Applications"</a></t>. The book, with a large set of Jupyter notebooks , is the companion of a hands-on course on Data Science.<br/>
+                                                
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                <img src="https://images-na.ssl-images-amazon.com/images/I/41zdcN-RzxL._SX328_BO1,204,203,200_.jpg" alt="DataBeersBCN" height="120" style="padding-bottom:2px;padding-right:8px;"></img>
+                                                </div>
+                                                
+                                                
+                                                </div><!--/.row -->
+                                                <br>
+                                                <hr>
+                                                </div><!--/.container -->
+                                                
+
+                                                <section id="publications" name="publications"></section>
+                                                <!--Publications DESCRIPTION -->
+                                                <div class="container desc">
+                                                <div class="row">
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>JOURNAL PUBLICATIONS</h5>
+                                                </div>
+                                                <div class="col-lg-9">
+                                                <p>S. Segu&iacute;, M. Drozdzal, G. Pascual, P. Radeva, C. Malagelada, F. Azpiroz, J. Vitri&agrave;,<t>Generic Feature Learning for Wireless Capsule Endoscopy Analysis</t>  Computer in Biology and Medicine (2016). <a href=http://www.computersinbiologyandmedicine.com/article/S0010-4825(15)00124-9/abstract" onClick="ga('send', 'event', 'Link', 'Journal', 'JCBM2016');">PDF</a><br/>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3"">
+                                                <p>C. Malagelada, M. Drozdzal, S. Segu&iacute;, S. Mendez, J. Vitria, P. Radeva, J. Santos, A. Accarino, J.R Malagelada, F. Azpiroz<t>Classification of functional bowel disorders by objective physiological criteria based on endoluminal image analysis</t>  American Journal of Physiology-Gastrointestinal and Liver Physiology(2015). <a href="http://ajpgi.physiology.org/content/309/6/G413.abstract" onClick="ga('send', 'event', 'Link', 'Journal', 'AJPH2015');">PDF</a><br/>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3"">
+                                                <p>RA Bendezú, E. Barba, E.  Burri, D. Cisternas, C. Malagelada, S. Segui, A. Accarino, S. Quiroga, E. Monclus, I. Navazo, J‐R Malagelada, F. Azpiroz <t>Intestinal gas content and distribution in health and in patients with functional gut symptoms.</t>  Neurogastroenterology & Motility 27 (9), 1249-1257.<a href="http://onlinelibrary.wiley.com/doi/10.1111/nmo.12618/full"" onClick="ga('send', 'event', 'Link', 'Journal', 'Neuro2015');">PDF</a><br/>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3"">
+                                                <p>M. Drozdzal, S. Segu&iacute;, P. Radeva, C. Malagelada, F. Azpiroz, J. Vitri&agrave;. <t>Motility bar: a new tool for motility analysis of endoluminal videos.</t>  Computer in Biology and Medicine (2015). <a href=http://www.computersinbiologyandmedicine.com/article/S0010-4825(15)00124-9/abstract" onClick="ga('send', 'event', 'Link', 'Journal', 'JCBM2015');">PDF</a><br/>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>S. Segu&iacute;, M. Drozdzal, E. Zaytseva, C. Malagelada, F. Azpiroz, P. Radeva, J. Vitri&agrave;. <t>Detection of wrinkle frames in endoluminal videos using betweenness centrality measures for images.</t>  IEEE Journal of Biomedical and Health Informatics (2014). <a href="http://ieeexplore.ieee.org/xpl/abstractMetrics.jsp?tp=&arnumber=6730655&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel7%2F6221020%2F6363502%2F06730655.pdf%3Farnumber%3D6730655" onClick="ga('send', 'event', 'Link', 'Journal', 'JBHI2014');">PDF</a><br/>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>S. Segu&iacute;, L. Igual, J. Vitri&agrave;. <T>Bagged One Class Classifiers in the Presence of Outliers.</T>  International Journal of Pattern Recognition and Artificial Intelligence (IJPRAI) – (2013). <a href="http://www.worldscientific.com/doi/abs/10.1142/S0218001413500146" onClick="ga('send', 'event', 'Link', 'Journal', 'IJPRAI2013');">PDF</a><br/>
+                                                </p>
+                                                </div>
+                                                
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>S. Segu&iacute;, M. Drozdzal, F. Vilarino, C. Malagelada, F. Azpiroz, P. Radeva, J. Vitri&agrave;. <t>Categorization and Segmentation of Intestinal Content Frames for Wireless Capsule Endoscopy</t> .  IEEE Transactions on Information Technology in Biomedicine (2012). <a href="https://www.google.ca/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCQQFjAA&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpl%2FarticleDetails.jsp%3Farnumber%3D6319409&ei=0-WIVKeZFs-IsQT2o4GYBA&usg=AFQjCNFGmdfmUH9AWuORh-fpt8X4euchUg&sig2=T8xpmUBCz7DhQqy6mZP5YA&bvm=bv.81456516,d.cWc" onClick="ga('send', 'event', 'Link', 'Journal', 'TITB2012');">PDF</a> <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>M. Drozdzal, S. Segu&iacute;, J. Vitri&agrave;, C. Malagelada, F. Azpiroz, P. Radeva. <t>Adaptable image cuts for motility inspection using WCE.</t>  Computerized Medical Imaging and Graphics (2012). <a href="https://www.google.ca/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAA&url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpubmed%2F23098835&ei=4-WIVOimBOLIsASpnoK4Aw&usg=AFQjCNHZeVZNnST8DyfRL5YVcuR5A_853Q&sig2=hkb4qYARLw9Abz_5lP97OA&bvm=bv.81456516,d.cWc" onClick="ga('send', 'event', 'Link', 'Journal', 'CMIG2012');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>C. Malagelada, Fosca De Iorio, S.Segu&iacute;, S.Meso, M.Drozdzal, et.al. <t>Functional Gut Disorders Or Disordered Gut Function? Small Bowel Dysmotility Evidenced By An Original Technique.</t> Neurogastroenterology AND Motility (November 2011). <a href="http://www.ncbi.nlm.nih.gov/pubmed/22129212" onClick="ga('send', 'event', 'Link', 'Journal', 'NEURO2011');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>C. Malagelada, Fosca De Iorio, Fernando Azpiroz, Anna Accarino, Santi Segu&iacute;, Petia Radeva, Juan–R. Malagelada. <t>New Insight Into Intestinal Motor Function via Noninvasive Endoluminal Image Analysis.</t>  Gastroenterology, Volume 135, Issue 4, Pages 1155-1162 (October 2008). <a href="http://www.ncbi.nlm.nih.gov/pubmed/18691579" onClick="ga('send', 'event', 'Link', 'Journal', 'GA2008');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>&agrave;. Lapedriza, S. Segu&iacute;, D. Masip, J. Vitri&agrave;. <t>A Sparse Bayesian Approach for Joint Feature Selection And Classifier Learning.</t>  PATTERN ANALYSIS AND APPLICATIONS. (PAA Special Issue on: Non-parametric Distance-based Classification Techniques and their Applications). Volume 115, Issue 3-4 , Pages 299-308 (Septiembre 2008). <a href="http://www.cvc.uab.es/~agata/pdfs/paa2006.pdf" onClick="ga('send', 'event', 'Link', 'Journal', 'PAA2008');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </div><!--/.row -->
+                                                <br>
+                                                </div><!--/.container -->
+                                                
+                                                <!--CONFERENCES DESCRIPTION -->
+                                                <div class="container desc">
+                                                <div class="row">
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>CONFERENCE PUBLICATIONS</h5>
+                                                </div>
+                                                <div class="col-lg-9">
+                                                <p>S. Segu&iacute;, O. Pujol, J. Vitri&agrave;. <t> Deep learning features for wireless capsule endoscopy analysis.</t> in:Iberoamerican Congress on Pattern Recognition 2016 . <a href="https://link.springer.com/chapter/10.1007/978-3-319-52277-7_40" onClick="ga('send', 'event', 'Link', 'Conf', 'ibpria2016');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>S. Segu&iacute;, O. Pujol, J. Vitri&agrave;. <t> Learning to count with deep object features.</t> in: Deep Vision 2015. CVPR workshops . <a href="http://www.cv-foundation.org/openaccess/content_cvpr_workshops_2015/W03/papers/Segui_Learning_to_Count_2015_CVPR_paper.pdf" onClick="ga('send', 'event', 'Link', 'Conf', 'cvpr2015');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>M. Drozdzal, J. Vitria, S. Segui, C. Malagelada, F. Azpiroz, P. Radeva, <t>Intestinal event segmentation for endoluminal video analysis.</t> in: Image Processing, IEEE International Conference on, 2014. <a href="#" onClick="ga('send', 'event', 'Link', 'Conf', 'ICIP2014');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>S.Segu&iacute;, M.Drozdzal, E.Zaytseva, C.Malagelada, F.Azpiroz, P.Radeva, J.Vitri&agrave;  <t>A new image centrality descriptor for wrinkle frame detection in WCE videos.</t> 30th IAPR International Conference on Machine Vision Applications . Kyoto, Japan 2013. <a href="http://refbase.cvc.uab.es/files/SDZ2013.pdf" onClick="ga('send', 'event', 'Link', 'Conf', 'ICMVA_wrinkles');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>E.Zaytseva, S.Segu&iacute;, J.Vitri&agrave;  <t>SKETCHABLE HISTOGRAMS OF ORIENTED GRADIENTS FOR OBJECT DETECTION.</t> 17th Iberomerican Conference on Pattern Recognition. Buenos Aires, Argentina. 2012. Lecture Notes Volume. 74 <a href="http://refbase.cvc.uab.es/files/ZSV2012.pdf" onClick="ga('send', 'event', 'Link', 'Conf', 'CIARP2012');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>Radeva, M Drozdzal, S Segui, L Igual, C Malagelada, F Azpiroz, J Vitria . <t>Active labeling: Application to wireless endoscopy analysis.</t>  International Conference on High Performance Computing and Simulation (HPCS), |07|2012. pp 174-181 <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6266908" onClick="ga('send', 'event', 'Link', 'Conf', 'HPCS2012');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>Santi Segu&iacute;, Michal Drozdzal, Petia Radeva and Jordi Vitri&agrave;. <t>AN INTEGRATED APPROACH TO CONTEXTUAL FACE DETECTION.</t> 1st International Conference on Pattern Recognition Applications and Methods (ICPRAM 2011). <a href="http://refbase.cvc.uab.es/files/SDR2012.pdf" onClick="ga('send', 'event', 'Link', 'Conf', 'ICPRAM2011');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>Michal Drozdzal, Santi Segu&iacute;, C. Malagelada, Fernando Azpiroz, Jordi Vitri&agrave;, Petia Radeva. <t>Interactive labeling of WCE images.</t> Iberian Conference on Pattern Recognition and Image Analysis. |06|2011. pp 143-150 <a href="http://download.springer.com/static/pdf/361/chp%253A10.1007%252F978-3-642-21257-4_18.pdf?auth66=1418835367_2485e752eeb64f677f7ae10051005746&ext=.pdf" onClick="ga('send', 'event', 'Link', 'Conf', 'IBPRIA2011');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>Santi Segu&iacute;, Laura Igual, Jordi Vitri&agrave;. <t>Weighted Bagging for Graph based One-Class Classifiers.</t> The 9th International Workshop on Multiple Classifier Systems (MCS 2010), Cairo (EGIPT)  |04|2010, Lecture Notes in Computer Science 5997–  pp. 1-10, 2010 <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-12127-2_1" onClick="ga('send', 'event', 'Link', 'Conf', 'MCS2010');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>L. Igual, J. Vitri&agrave;, F. Vilariño, S. Segu&iacute;, C. Malagelada, F. Azpiroz and P. Radeva. <t>Automatic discrimination of duodenum in wireless capsule endoscopy video.</t> 4th European Congress for Medical and Biomedical Engineering 2008. Antwerp (Belgium) <a href="http://link.springer.com/chapter/10.1007%2F978-3-540-89208-3_365" onClick="ga('send', 'event', 'Link', 'Conf', 'ECMB2008');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>Santi Segu&iacute;, Laura Igual, Fernando Vilariño, Petia Radeva, C. Malagelada, Fernando Azpiroz, Jordi Vitri&agrave;, <t>Diagnostic System for Intestinal Motility Dysfunctions Using Video Capsule Endoscopy.</t> 6th Internation Conference on Computer Vision Systems (ICVS 2008), Santorini (GREECE) |5| 2008. Lecture Notes In Computer Science 5008 – pp 251-260, 2008 <a href="#" onClick="ga('send', 'event', 'Link', 'Conf', 'ICVS2008');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>Laura Igual, Santi Segu&iacute;, Jordi Vitri&agrave;, Fernando Azpiroz, Petia Radeva, <t>Sparse Bayesian Feature Selection Applied to Intestinal Motility Analysis. </t>XVI Congreso Argentino de Bioingenieria (SABI 2007),San Juan (ARGENTINA) |09|2007-09-23, Journal of Physics – Conferences Series (JPCS). <a href="#" onClick="ga('send', 'event', 'Link', 'Conf', 'SABI2007');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>Santi Segu&iacute;, Laura Igual, Petia Radeva, C. Malagelada, Fernando Azpiroz, Jordi Vitri&agrave;. <t>A Semi-Supervised Learning Method for Motility Disease Diagnostic.</t> The 12th Iberoamerican Congress on Pattern  (CIARP 2007),  Valparaiso (CHILE)  |11|2007, Lecture Notes in Computer Science 4756 –  pp. 773-782, 2007 <a href="#" onClick="ga('send', 'event', 'Link', 'Conf', 'CIARP2007');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>Laura Igual, Santi Segu&iacute;, Jordi Vitri&agrave;, Fernando Azpiroz, Petia Radeva, <t>Eigenmotion-Based Detection of Intestinal Contractions.</t> The 12th International Conference on Computer Analysis of Images and Patterns  (CAIP 2007),   Vienna (AUSTRIA)  |8| 2007. Lecture Notes in Computer Science 4673 – pp. 293-300, 200 <a href="#" onClick="ga('send', 'event', 'Link', 'Conf', 'CAIP2007');">PDF</a>
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </div><!--/.row -->
+                                                <br>
+                                                </div><!--/.container -->
+                                                
+                                                
+                                                <!--CONFERENCES DESCRIPTION -->
+                                                <div class="container desc">
+                                                <div class="row">
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>PATENTS</h5>
+                                                </div>
+                                                <div class="col-lg-9">
+                                                <p>SYSTEM AND METHOD FOR DISPLAYING MOTILITY EVEVNTS IN AN IN VIVO IMAGE STREAM. Inventors: Michal Drozdzal; Santi Segu&iacute;; Petia Radeva; Jordi Vitri&agrave;; Laura Igual; Carolina Malagelada; Fernando Azpiroz
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>SYSTEM AND METHOD FOR IMPROVING A DISCRIMINATIVE MODEL. Inventors: Michal Drozdzal, Petia Radeva, Jordi Vitri&agrave;, Fernando Azpiroz, Laura Igual, Santiago Segu&iacute;, Carolina Malagelada .
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>METHOD FOR AUTOMATIC CLASSIFICATION OF IN VIVO IMAGES . Inventors: Laura Igual, Jordi Vitri&agrave;, Fernando Vilariño, Santiago Segu&iacute; , Carolina Malagelada, Fernando Azpiroz, Petia Radeva . Patent Number; US2010046816-A1
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>SYSTEM AND METHOD FOR SYNCHRONIZING IMAGE SEQUENCES CAPTURED IN-VIVO FOR AUTOMATIC COMPARISON.Inventors: Michal Drozdzal, Petia Radeva, Jordi Vitri&agrave;, Fernando Azpiroz, Laura Igual, Santiago Segu&iacute;, Carolina Malagelada
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>SYSTEM AND METHOD FOR AUTOMATIC DETECTION OF IN VIVO CONTRACTION VIDEO SEQUENCES. Inventors: Michal  Drozdzal, Petia Radeva, Santiago Segu&iacute;, Laura Igual, Carolina Malagelada, Fernando Azpiroz, Jordi Vitri&agrave;. US Patent App. 20,100/046,816
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                
+                                                </div><!--/.row -->
+                                                <br>
+                                                </div><!--/.container -->
+                                                
+                                                <!--Medical Conferences -->
+                                                <div class="container desc">
+                                                <div class="row">
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>MEDICAL CONFERENCES</h5>
+                                                </div>
+                                                <div class="col-lg-9">
+                                                <p>Carolina Malagelada, Michal Drozdzal , Santi Segu&iacute;, Javier Santos, Juan R. Malagelada, Jordi Vitria, Petia Radeva, Fernando Azpiroz.  Analysis of Endoluminal Images typifies Abnormal Intestinal Motor Behaviour in Patients with Function Bowel Disorders.  United European Gastroenterology Week (UEGW). Berlin 2013
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>Carolina Malagelada, Santi Segu&iacute;, Michal Drozdzal, Sara M&eacute;ndez Soriano,Anna Accarino, Javier Santos, Juan R. Malagelada, Jordi Vitria, Fernando Azpiroz.  Distinctive Dysmotility Patterns Demonstrated by Computer Vision Analysis of Capsule Endoscopy Images in Patients With Functional Gut Disorders.  DDW 2012 .Gastroenterology Vol. 142, Issue 5, Supplement 1, Pages S-825-S-826
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>C.Malagelada, F.De Iorio, S. Segui, S. Mendez, M. Drozdzal, J. Vitri&agrave;, R. Radeva, J. Santos, A. Accarino, J.R. Malagelada, F. Azpiroz.Alteraci&oacute;n de la funci&oacute;n motora en los trastornos intestinales funcionales. Semana de las Enfermedades Digestivas. Semana De Las Enfermedades Digestivas (DDW 2011). Madrid (SPAIN). Rev Esp Enferm Dig 2011;  (supl 1).
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>C. Malagelada, F. De Iorio, F. Azpiroz, S. Segui, P. Radeva,  A. Accarino, J. Santos, J.R. Malagelada. Intestinal Dysmotility In Patients With Functional Intestinal Disorders Demonstrated By Computer Vision Analysis Of Capsule Endoscopy Images.  United European Gastroenterology Week. Barcelona (Spain) |10|2010. GUT 2010; 56 (SUPPL III): A19-20
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>C. Malagelada, F. De Iorio, F. Azpiroz, A. Accarino, S. Segui, P. Radeva, J.R. Malagelada. Detecci&oacute; de l’absència d’activitat motora intestinal mitjançant un mètode autom&agrave;tic i no invasiu. Congres de la Societat Catalana de Digestologia. Blanes, January 2009. Annals de Medicina 2009; 92 (supl1): S1-66
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>C. Malagelada, F. De Iorio, F. Azpiroz, A. Accarino, S. Segui, P. Radeva, J.R. Malagelada. Detecci&oacute;n de la ausencia de actividad motora intestinal mediante un m&eacute;todo autom&aacute;tico y no invasivo. Semana de las Enfermedades Digestivas. Madrid, Junio 2009. Rev Esp Enferm Dig 2009; 101 (supl 1).
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>C. Malagelada, F. De Iorio, F. Azpiroz, A. Accarino, S. Segui, P. Radeva, J.R. Malagelada. Diagn&oacute;stico de los trastornos motores del intestino delgado mediante un nuevo m&eacute;todo no invasivo y automatizado de an&aacute;lisis de las im&aacute;genes endoluminales. Semana de las Enfermedades Digestivas. Barcelona, Junio 2008. Rev Esp Enferm Dig 2008; 100 (supl 1).
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>C. Malagelada, F. de Iorio, F. Azpiroz, M. Maluenda, C. Volanti, S. Segu&iacute;, J. Vitri&agrave;, P. Radeva, A. Accarino, J-R Malagelada. Precise Diagnosis of Severe Small Bowel Dysmotility by a Novel, Non-invasisve and Fully Automated Endoluminal Image Method. United European Gastroenterology Week. Paris (France) |10|2007. Gut 2007; 56 (Suppl III): A337
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                </div><!--/.row -->
+                                                <br>
+                                                </div><!--/.container -->
+                                                
+                                                
+                                                
+                                                <section id="teaching" name="teaching"></section>
+                                                <!--TEACHING DESCRIPTION -->
+                                                <div class="container desc">
+                                                <div class="row">
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>TEACHING</h5>
+                                                </div>
+                                                <div class="col-lg-9">
+                                                      <p><b>Present:</b>.
+                                                      <br/>
+                                                      </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                      <p>2016-17 Machine Learning: Computer Science Engineering Degree.
+                                                      <br/>
+                                                      </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2016-17 Recommender Systems<a href="http://www.ub.edu/master" onClick="ga('send', 'event', 'Link', 'Course', 'Master');">. Master on Foundations of Data Science. </a> 
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9  col-lg-offset-3">
+                                                      <p>2016-17 <a href="http://www.ub.edu/deep" onClick="ga('send', 'event', 'Link', 'Course', 'Deep');">Deep Learning Short Course.</a> Postgraduate
+                                                      <br/>
+                                                      </p>
+                                                </div>
+
+                                                 <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2016-17 <a href="http://www.ub.edu/datascience" onClick="ga('send', 'event', 'Link', 'Course', 'DataScience');">Data Science Course. </a> Postgraduate
+                                                <br/>
+                                                </p>
+                                                </div>
+
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                      <p>2016-17 Projecte Integrat de Software (PIS): Android Course. PIS-2014 Computer Science Engineering Degree.
+                                                      <br/>
+                                                      </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                      <p><b>Past:</b>.
+                                                      <br/>
+                                                      </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                      <p>2015-16 Machine Learning: Computer Science Engineering Degree.
+                                                      <br/>
+                                                      </p>
+                                                </div>
+                                                <div class="col-lg-9  col-lg-offset-3">
+                                                      <p>2015-16 <a href="http://www.ub.edu/deep" onClick="ga('send', 'event', 'Link', 'Course', 'Deep');">Deep Learning Short Course.</a> Postgraduate
+                                                      <br/>
+                                                      </p>
+                                                </div>
+                                                 <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2015-16 <a href="http://www.ub.edu/datascience" onClick="ga('send', 'event', 'Link', 'Course', 'DataScience');">Data Science Course. </a> Postgraduate
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                 <div class="col-lg-9 col-lg-offset-3">
+                                                      <p>2015-16 Projecte Integrat de Software (PIS): Android Course. PIS-2014 Computer Science Engineering Degree.
+                                                      <br/>
+                                                      </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                      <p>2014-15 Programming II (Object Oriented Programming).P2-2014 Computer Science Engineering Degree.
+                                                      <br/>
+                                                      </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2014-15 <a href="http://www.ub.edu/datascience" onClick="ga('send', 'event', 'Link', 'Course', 'DataScience');">Data Science Course. </a> Postgraduate
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2013-14 Projecte Integrat de Software (PIS): Android Course. PIS-2013 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2013-14 Nous Usos de la Inform&agrave;tica. NUI-2013 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2012-13 Projecte Integrat de Software (PIS): Android Course. PIS-2012 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2012-13 Programming II (Object Oriented Programming).PIS-2012 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2011-12 Projecte Integrat de Software (PIS): Android Course. PIS-2011 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2010-11 Projecte Integrat de Software (PIS): Android Course. PIS-2010 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2010-11 Nous Usos de la Inform&agrave;tica. NUI-2010 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2009-10 Data Sctructures. ED-2009 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2009-10 Nous Usos de la Inform&agrave;tica. NUI-2009 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2008-09 Programming I P1-2008 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p>2008-09 Nous Usos de la Inform&agrave;tica. NUI-2008 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-9 col-lg-offset-3">
+                                                <p> 2008-09 Operative Systems SO-2008 Computer Science Engineering Degree.
+                                                <br/>
+                                                </p>
+                                                </div>
+                                                </div><!--/.row -->
+                                                <br>
+                                                </div><!--/.container -->
+                                                
+                                                <section id="organizing" name="organizing"></section>
+                                                <!--ORGANIZATION DESCRIPTION -->
+                                                <div class="container desc">
+                                                <div class="row">
+                                                
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>ORGANIZATION</h5>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                <p><t><a target="_blank" href="http://databeersbcn.com/" onClick="ga('send', 'event', 'Link', 'Click', 'DataBeersBCN');">DataBeersBCN</a></t><br/>
+                                                Informal event to gather Data Science and Big Data community from all scientific/artistic areas to discuss about data, with a few beers.<br/>
+                                                
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                <img src="./assets/img/DataBeersBCN_logo.png" alt="DataBeersBCN" height="120" style="padding-bottom:2px;padding-right:8px;"></img>
+                                                </div>
+                                                
+                                                
+                                                </div><!--/.row -->
+                                                <br>
+                                                <hr>
+                                                </div><!--/.container -->
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <!--SKILLS DESCRIPTION -->
+                                                <div id="skillswrap">
+                                                <div class="container">
+                                                <div class="row">
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>SKILLS</h5>
+                                                </div>
+                                                <div class="col-lg-3 centered">
+                                                <canvas id="Computer Vision" height="130" width="130"></canvas>
+                                                <p>Computer Vision</p>
+                                                <br>
+                                                <script>
+                                                var doughnutData = [
+                                                {
+                                                value: 95,
+                                                color:"#1abc9c"
+                                                },
+                                                {
+                                                value : 5,
+                                                color : "#ecf0f1"
+                                                }
+                                                ];
+                                                var myDoughnut = new Chart(document.getElementById("Computer Vision").getContext("2d")).Doughnut(doughnutData);
+                                                </script>
+                                                </div>
+                                                <div class="col-lg-3 centered">
+                                                <canvas id="bootstrap" height="130" width="130"></canvas>
+                                                <p>Machine Learning</p>
+                                                <br>
+                                                <script>
+                                                var doughnutData = [
+                                                {
+                                                value: 70,
+                                                color:"#1abc9c"
+                                                },
+                                                {
+                                                value : 30,
+                                                color : "#ecf0f1"
+                                                }
+                                                ];
+                                                var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+                                                </script>
+                                                </div>
+                                                <div class="col-lg-3 centered">
+                                                <canvas id="wordpress" height="130" width="130"></canvas>
+                                                <p>C++</p>
+                                                <br>
+                                                <script>
+                                                var doughnutData = [
+                                                {
+                                                value: 65,
+                                                color:"#1abc9c"
+                                                },
+                                                {
+                                                value : 35,
+                                                color : "#ecf0f1"
+                                                }
+                                                ];
+                                                var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+                                                </script>
+                                                </div>
+                                                
+                                                <div class="col-lg-3 col-lg-offset-3 centered">
+                                                <canvas id="html" height="130" width="130"></canvas>
+                                                <p>Android</p>
+                                                <br>
+                                                <script>
+                                                var doughnutData = [
+                                                {
+                                                value: 80,
+                                                color:"#1abc9c"
+                                                },
+                                                {
+                                                value : 20,
+                                                color : "#ecf0f1"
+                                                }
+                                                ];
+                                                var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+                                                </script>
+                                                </div>
+                                                <div class="col-lg-3 centered">
+                                                <canvas id="photoshop" height="130" width="130"></canvas>
+                                                <p>Python</p>
+                                                <br>
+                                                <script>
+                                                var doughnutData = [
+                                                {
+                                                value: 70,
+                                                color:"#1abc9c"
+                                                },
+                                                {
+                                                value : 30,
+                                                color : "#ecf0f1"
+                                                }
+                                                ];
+                                                var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+                                                </script>
+                                                </div>
+                                                <div class="col-lg-3 centered">
+                                                <canvas id="illustrator" height="130" width="130"></canvas>
+                                                <p>Matlab</p>
+                                                <br>
+                                                <script>
+                                                var doughnutData = [
+                                                {
+                                                value: 99,
+                                                color:"#1abc9c"
+                                                },
+                                                {
+                                                value : 1,
+                                                color : "#ecf0f1"
+                                                }
+                                                ];
+                                                var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+                                                </script>
+                                                </div>
+                                                
+                                                </div><!--/.row -->
+                                                <br>
+                                                </div><!--/.container -->
+                                                </div><!--/ #skillswrap -->
+                                                
+                                                
+                                                <section id="contact" name="contact"></section>
+                                                <!--FOOTER DESCRIPTION -->
+                                                <div id="footwrap">
+                                                <div class="container">
+                                                <div class="row">
+                                                
+                                                <div class="col-lg-2 col-lg-offset-1">
+                                                <h5>CONTACT</h5>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                <p><t>Email</t><br/>
+                                                santi.segui@ub.edu <br/>
+                                                </p>
+                                                <p><t>Address</t><br/>
+                                                Gran Via de les Corts Catalanes,585.
+                                                <br/>
+                                                Postal 08007. Barcelona, Spain. <br/>
+                                                </p>
+                                                <p><t>Phone</t><br/>
+                                                Tel. +34 93 402 16 31 <br/>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                <p><sm>SOCIAL LINKS</sm></p>
+                                                <p>
+                                                <a href="http://scholar.google.ca/citations?user=8pDLgTcAAAAJ&hl=en" onClick="ga('send', 'event', 'Link', 'Click', 'SCHOOLAR');"><img src="./assets/img/icons/icon_scholar.png" alt="schoolar" height="14" style="padding-bottom:2px;padding-right:8px;"></i></a>
+                                                <a href="https://twitter.com/SeguiSanti" onClick="ga('send', 'event', 'Link', 'Click', 'TWITTER');"><i class="icon-twitter"></i></a>
+                                                <a href="https://www.linkedin.com/pub/santi-segu&iacute;-mesquida" onClick="ga('send', 'event', 'Link', 'Click', 'LINKEDIN');"><i class="icon-linkedin"></i></a>
+                                                
+                                                </p>
+                                                </div>
+                                                </div><!--/.row -->
+                                                </div><!--/.container -->
+                                                </div><!--/ #footer -->
+                                                
+                                                <div id="c">
+                                                <div class="container">
+                                                <p>Created by <a href="http://www.blacktie.co" onClick="ga('send', 'event', 'Link', 'Click', 'webTemplate');">BLACKTIE.CO</a>. Edited by Santi Segu&iacute;</p>
+                                                
+                                                </div>
+                                                </div>
+                                                
+                                                
+                                                <!-- Bootstrap core JavaScript
+                                                ================================================== -->
+                                                <!-- Placed at the end of the document so the pages load faster -->
+                                                <script src="assets/js/bootstrap.js"></script>
+                                                </body>
+                                                </html>
