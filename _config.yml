@@ -1,2 +1,11 @@
 plugins:
   - jekyll-seo-tag
+  
+title: Santi Segui
+
+# Short description of your site
+description: Santi Segui, Lecturer at the Department of Maths and Computer Science of the Universitat de Barcelona (UB). Interested in computer vision, machine learning and deep learning. Professor at computer science degree University of Barcelona
+        
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
